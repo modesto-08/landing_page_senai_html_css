@@ -6,4 +6,57 @@
   box-sizing: border-box;
 }
 
-/* Continuar digitação código CSS (deste ponto) */
+/* Trabalhando com variáveis de CSS (Para as cores) */
+:root {
+  --cor-primaria: #f9003d;
+  --cor-secundaria: #a259F7;
+  --cor-destaque: #ffaf00;
+  --fundo-escuro: #080324;
+  --texto-claro: #fff;
+  --texto-cinza: #c7bab3;
+}
+
+/* Estilos Gerais */
+body {
+  background-color: var(--fundo-escuro);
+  color: var(--texto-claro);
+  font-family: 'Bebas Neue', sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+/* Header (Cabeçalho) */
+.header {
+  background-color: var(--cor-primaria);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  padding: 0.5rem 0;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.logo {
+  height: 40px;
+}
+/* Menu de Navegação */
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
